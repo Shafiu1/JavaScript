@@ -24,3 +24,7 @@ map.set('ETE',"Electrical and Telecommunication Engineering");
 // map.set('ETE',"Electrical and Telecommunication");
 
 console.log(map);
+
+for(const key of map){
+    console.log(key);
+}
