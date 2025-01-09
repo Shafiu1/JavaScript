@@ -25,6 +25,16 @@ map.set('ETE',"Electrical and Telecommunication Engineering");
 
 console.log(map);
 
-for(const key of map){
-    console.log(key);
+for(const [key,value] of map){
+    console.log(`key ${key} and value ${value}`);
 }
+
+const myObject = {
+    'game1':"Cricket",
+    'game2':"Football"
+}
+
+//object is not iterable through the for of loop
+// for(const element of myObject){
+//     console.log(element);
+// }
