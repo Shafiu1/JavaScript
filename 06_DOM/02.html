@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM | Shafiul Alam</title>
-</head>
-<body>
-    <div class="paarent">
-        <div class="day">Saturday</div>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <div class="parent">
+      <div class="day">Saturday</div>
+      <div class="day">Saturday</div>
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednessday</div>
+      <div class="day">Friday</div>
     </div>
-</body>
+    <script>
+      const parent = document.querySelector(".parent");
+      // console.log(parent);
+      // console.log(parent.children);
+      // console.log(parent.children[1].innerHTML);
+
+      // for(let i=0;i<parent.children.length;i++){
+      //     if(i%2){
+      //         parent.children[i].style.color='green';
+      //     }
+      // }
+
+      // console.log(parent.firstElementChild);
+      // console.log(parent.lastElementChild);
+
+      const dayOne = document.querySelector(".day");
+    //   console.log(dayOne);
+    //   console.log(dayOne.parentElement);
+    //   console.log(dayOne.nextElementSibling.innerText);
+
+    console.log("NODES: ", parent.childNodes);
+    </script>
+  </body>
 </html>
