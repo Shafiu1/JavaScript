@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:#212121; color:white">
+     <p id ='location'></p>
+     <div>Hello , what happend boss</div>
+</body>
+<script>
+    let barigor =" ";
+    const requestUrl = 'https://randomuser.me/api/';
+    const xhr= new XMLHttpRequest();
+    xhr.open('GET',requestUrl);
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState==4){
+            const data = JSON.parse(this.responseText);
+            barigor = data.results[0].location.city;//data always comes as a string 
+            console.log(barigor);
+            document.getElementById('location').innerHTML = data.results[0].location.city;
+        }
+    }
+    console.log(barigor);
+    
+    xhr.send();
+
+</script>
+</html>
